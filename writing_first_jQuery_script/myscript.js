@@ -7,4 +7,6 @@
 $(document).ready(function () {
     $("tr:odd").addClass("odd");
     $("tr:even").addClass("even");
+    $("th:odd").addClass("odd");
+    $("th:even").addClass("even");
 });
