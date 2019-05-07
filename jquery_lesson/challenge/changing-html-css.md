@@ -45,4 +45,4 @@ If I just want to change the text!
 Insert a new span in the footer section:
     $("#my_footer").append("<span> &copy; 2017.</span>");
 
-## Removing elements in the DOM
+## Removing elements in the DOM. .remove(); function removs an element.
