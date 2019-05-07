@@ -1,4 +1,4 @@
-# Complete table and use jQuery to style it.
+# Complete table and use jQuery to style it
 
 ## HTML file
 
@@ -8,6 +8,6 @@
 ## .js file
 
 add the document.ready.function()
-and insert the two classes with the jQuery 
+and insert the two classes with the jQuery
     $("tr:odd).addClass(odd);
     $("tr:even).addClass(even);
