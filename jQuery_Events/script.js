@@ -81,17 +81,15 @@ $(document).ready(function () {
     });
 
     // When a button is hovered, the background color of the body turns black, when mouse is moved it changes back to grey.
-    $(".bottom_button").mouseenter(function () {
+    $("bottom_button").mouseenter(function () {
         $("body").css("background-color", "black");
     });
-    $(".bottom_button").mouseleave(function () {
+    $("bottom_button").mouseleave(function () {
         $("body").css("background-color", "#eee");
     });
 
 
     //!------------- challenge nr 1 - Hide ---------------
-
-    // make the first button hide when clicked
 
     $("#html_button").click(function () {
         $("#html_button").hide("medium");
@@ -100,18 +98,23 @@ $(document).ready(function () {
 
     //!------------- challenge nr 2 - Show, Hide and Toggle ---------------
 
-    // Make the paragraph above the mysql button vanish and reapear when the button is clicked
-
     $("#mysql_button").click(function () {
         $("#hide").toggle("2000");
     });
 
     //!------------- challenge nr 3 - Slide ---------------
 
-    // Make the paragraph above the mysql button vanish and reapear when the button is clicked
-
     $("#python_button").click(function () {
         $("#slide").slideToggle("3000");
+    });
+
+    //!------------- challenge nr 4 - Fade to, mouseenter, mouseleave ---------------
+
+    $("#jquery_button").mouseenter(function () {
+        $("#jquery_button").fadeTo(1000, 0.5);
+    });
+    $("#jquery_button").mouseleave(function () {
+        $("#jquery_button").fadeTo(1000, 1);
     });
 
 
