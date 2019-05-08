@@ -7,7 +7,17 @@
 	margin-left:auto;
 	max-width:1050px;	
 }
-.bottom-button{
+
+#container-bottom
+{
+	display: flex;		/* makes container a flexbox*/
+	flex-flow: row wrap; 	/* layout the boxes in rows and wrap them*/
+	box-sizing:border-box;
+	margin-right:auto;
+	margin-left:auto;
+	max-width:1050px;	
+}
+.top-button{
 	display: flex;
 	box-sizing:border-box;
 	border-radius: 4px;
@@ -20,12 +30,25 @@
 	color: #fff;
 }
 
+.bottom-button{
+	display: flex;
+	box-sizing:border-box;
+	border-radius: 4px;
+	display: block;
+	width: 100%;
+	background-color:rgba(202, 37, 22, 0.85);
+	text-align: center;
+	padding: 1em .75em;
+	text-decoration: none;
+	color: #fff;
+}
+
 /* Create a class makeRed which sets the button to red */ 
-.makeRed {
+.make-red {
 	background-color: red;
 }
 
-.makeBorder {
+.make-border {
 	border: 2px;
 }
 
