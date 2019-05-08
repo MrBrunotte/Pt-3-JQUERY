@@ -17,7 +17,8 @@ $(document).ready(function () {
         $(".stream3").removeClass('highlight_stream');
         $(".stream3").addClass('highlight_stream');
     });
-    //!------------- challenge nr 1 ---------------
+
+    //!------------- challenge nr 0 ---------------
 
     //! click on the text and it turns red!
     $("p").on("click", function () {
@@ -86,4 +87,15 @@ $(document).ready(function () {
     $(".bottom_button").mouseleave(function () {
         $("body").css("background-color", "#eee");
     });
+
+
+    //!------------- challenge nr 1 ---------------
+
+    //! make the first button hide when clicked
+    $("#html_button").click(function () {
+        $("#html_button").hide("medium");
+        //$("#html_button").hide(3000);
+    });
+
+    // closing brackets for the document.ready.function()
 });
