@@ -31,7 +31,7 @@ Now try hide() / show() and fadeIn() / fadeOut() on button click.
 
 ## Challenge 4
 
-Go to https://www.eir.ie/ and inspect the page. In the console write:
+Go to www.eir.ie/ and inspect the page. In the console write:
 
     $("a").attr("href","https://codeinstitute.net/");
 
