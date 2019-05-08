@@ -20,17 +20,17 @@ $(document).ready(function () {
 
     //!------------- challenge nr 0 ---------------
 
-    //! click on the text and it turns red!
+    // click on the text and it turns red!
     $("p").on("click", function () {
         $("p").addClass("highlight_text");
     });
 
-    //! Hover over <h2> header and all headers turn lightblue
+    // Hover over <h2> header and all headers turn lightblue
     $("h2").hover(function () {
         $("h2").addClass("header_background");
     });
 
-    //! Change font-size of specific h2 header change from 1em to 3em
+    // Change font-size of specific h2 header change from 1em to 3em
     $("#html").hover(function () {
         $("#mysql").removeClass("h2_font_size");
         $("#python").removeClass("h2_font_size");
@@ -80,7 +80,7 @@ $(document).ready(function () {
         $("#css").addClass("h2_font_size");
     });
 
-    //! When a button is hovered, the background color of the body turns black, when mouse is moved it changes back to grey.
+    // When a button is hovered, the background color of the body turns black, when mouse is moved it changes back to grey.
     $(".bottom_button").mouseenter(function () {
         $("body").css("background-color", "black");
     });
@@ -89,13 +89,31 @@ $(document).ready(function () {
     });
 
 
-    //!------------- challenge nr 1 ---------------
+    //!------------- challenge nr 1 - Hide ---------------
 
-    //! make the first button hide when clicked
+    // make the first button hide when clicked
+
     $("#html_button").click(function () {
         $("#html_button").hide("medium");
         //$("#html_button").hide(3000);
     });
 
-    // closing brackets for the document.ready.function()
+    //!------------- challenge nr 2 - Show, Hide and Toggle ---------------
+
+    // Make the paragraph above the mysql button vanish and reapear when the button is clicked
+
+    $("#mysql_button").click(function () {
+        $("#hide").toggle("2000");
+    });
+
+    //!------------- challenge nr 3 - Slide ---------------
+
+    // Make the paragraph above the mysql button vanish and reapear when the button is clicked
+
+    $("#python_button").click(function () {
+        $("#slide").slideToggle("3000");
+    });
+
+
+    //! closing brackets for the document.ready.function()
 });
