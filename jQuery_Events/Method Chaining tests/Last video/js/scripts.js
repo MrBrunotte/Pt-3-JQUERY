@@ -1,7 +1,13 @@
-$("button").mouseenter(function () {
-    $("this").removeClass("makeRedNow").addClass("makeBlueNow");
-});
+$(document).ready(function () {
 
-$("button").mouseleave(function () {
-    $("this").removeClass("makeBlueNow").addClass("makeRedNow");
-});
+
+
+    $("button").mouseenter(function () {
+        $("this").removeClass("makeRedNow").addClass("makeBlueNow");
+    });
+
+    $("button").mouseleave(function () {
+        $("this").removeClass("makeBlueNow").addClass("makeRedNow");
+    });
+
+})
